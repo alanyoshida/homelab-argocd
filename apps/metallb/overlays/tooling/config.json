@@ -1,0 +1,10 @@
+{
+  "appName": "metallb",
+  "userGivenName": "metallb",
+  "destNamespace": "metallb-system",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/metallb/overlays/tooling",
+  "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
+  "srcTargetRevision": "",
+  "labels": null
+}
