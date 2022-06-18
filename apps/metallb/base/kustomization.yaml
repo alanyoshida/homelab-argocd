@@ -3,12 +3,4 @@ kind: Kustomization
 namespace: metallb-system
 resources:
   - github.com/metallb/metallb//manifests?ref=v0.12.1
-  - ipaddresspool.yaml
-
-configMapGenerator:
-  - name: config
-    files:
-      - configs/config
-
-generatorOptions:
-  disableNameSuffixHash: true
+  - configmap.yaml
