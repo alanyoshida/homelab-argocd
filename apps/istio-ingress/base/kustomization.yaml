@@ -2,13 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: istio-system
 helmCharts:
-- name: base
+- name: gateway
   includeCRDs: true
-  releaseName: base
+  releaseName: gateway
   version: 1.14.1
   repo: https://istio-release.storage.googleapis.com/charts
-- name: istiod
-  includeCRDs: true
-  releaseName: istiod
-  version: 1.14.1
-  repo: https://istio-release.storage.googleapis.com/charts
+  valuesInline:
+    podAnnotations:
+      proxy.istio.io/config: '{"discoveryAddress" : "istiod.istio-system.svc:15012" }'
+

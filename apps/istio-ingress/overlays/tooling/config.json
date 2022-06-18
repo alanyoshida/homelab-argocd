@@ -1,0 +1,10 @@
+{
+  "appName": "istio-ingress",
+  "userGivenName": "istio-ingress",
+  "destNamespace": "istio-system",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/istio-ingress/overlays/tooling",
+  "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
+  "srcTargetRevision": "",
+  "labels": null
+}
