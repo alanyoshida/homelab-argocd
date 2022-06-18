@@ -3,7 +3,7 @@
   "userGivenName": "rook-ceph",
   "destNamespace": "rook-ceph",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "apps/rook-ceph/overlays/tooling",
+  "srcPath": "apps/rook/overlays/tooling",
   "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
   "srcTargetRevision": "",
   "labels": null
