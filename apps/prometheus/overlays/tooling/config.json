@@ -1,7 +1,7 @@
 {
   "appName": "prometheus",
   "userGivenName": "prometheus",
-  "destNamespace": "prometheus",
+  "destNamespace": "observability",
   "destServer": "https://kubernetes.default.svc",
   "srcPath": "apps/prometheus/overlays/tooling",
   "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
