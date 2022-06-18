@@ -1,0 +1,10 @@
+{
+  "appName": "cert-manager",
+  "userGivenName": "cert-manager",
+  "destNamespace": "cert-manager",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/cert-manager/overlays/tooling",
+  "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
+  "srcTargetRevision": "",
+  "labels": null
+}
