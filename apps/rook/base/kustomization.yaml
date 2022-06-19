@@ -7,3 +7,10 @@ helmCharts:
   releaseName: rook-ceph
   version: v1.9.5
   repo: https://charts.rook.io/release
+- name: rook-ceph-cluster
+  includeCRDs: true
+  releaseName: rook-ceph-cluster
+  version: v1.9.5
+  repo: https://charts.rook.io/release
+  valuesInline:
+    operatorNamespace: rook-ceph
