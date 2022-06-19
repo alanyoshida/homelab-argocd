@@ -1,7 +1,7 @@
 {
   "appName": "rook-ceph-cluster",
   "userGivenName": "rook-ceph-cluster",
-  "destNamespace": "rook-ceph",
+  "destNamespace": "rook-ceph-cluster",
   "destServer": "https://kubernetes.default.svc",
   "srcPath": "apps/rook-cluster/overlays/tooling",
   "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
