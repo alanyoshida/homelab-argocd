@@ -1,0 +1,10 @@
+{
+  "appName": "bookinfo",
+  "userGivenName": "bookinfo",
+  "destNamespace": "bookinfo",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/bookinfo/overlays/tooling",
+  "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
+  "srcTargetRevision": "",
+  "labels": null
+}
