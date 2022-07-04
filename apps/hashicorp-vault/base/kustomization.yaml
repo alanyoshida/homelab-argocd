@@ -13,6 +13,7 @@ helmCharts:
     server:
       dataStorage:
         storageClass: manual
+        mountPath: "/mnt/data-vault"
     ui:
       enabled: true
       serviceType: "LoadBalancer"
