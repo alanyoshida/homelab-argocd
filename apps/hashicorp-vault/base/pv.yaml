@@ -6,7 +6,7 @@ metadata:
   name: pv-volume-vault
 spec:
   accessModes:
-  - ReadWriteOnce
+  - ReadWriteMany
   capacity:
     storage: 10Gi
   hostPath:
