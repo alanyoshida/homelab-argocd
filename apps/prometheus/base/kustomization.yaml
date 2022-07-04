@@ -10,7 +10,7 @@ helmCharts:
   valuesInline:
     alertmanager:
       persistentVolume:
-        storageClass: rook-ceph-block
+        storageClass: manual
     server:
       persistentVolume:
-        storageClass: rook-ceph-block
+        storageClass: manual
