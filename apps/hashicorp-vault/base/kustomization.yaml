@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: vault
 resources:
   - pv.yaml
+  - vs.yaml
 helmCharts:
 - name: vault
   includeCRDs: true
