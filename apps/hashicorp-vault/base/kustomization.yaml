@@ -16,4 +16,3 @@ helmCharts:
         mountPath: "/mnt/data-vault"
     ui:
       enabled: true
-      serviceType: "LoadBalancer"
