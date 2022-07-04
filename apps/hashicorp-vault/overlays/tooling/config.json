@@ -1,0 +1,10 @@
+{
+  "appName": "hashicorp-vault",
+  "userGivenName": "hashicorp-vault",
+  "destNamespace": "vault",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/hashicorp-vault/overlays/tooling",
+  "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
+  "srcTargetRevision": "",
+  "labels": null
+}
