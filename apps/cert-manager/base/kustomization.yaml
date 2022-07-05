@@ -10,3 +10,4 @@ helmCharts:
   valuesInline:
     installCRDs: true
     namespace: "cert-manager"
+    fullnameOverride: "cert-manager"
