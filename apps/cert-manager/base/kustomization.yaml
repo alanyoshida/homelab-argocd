@@ -10,4 +10,5 @@ helmCharts:
   valuesInline:
     installCRDs: true
     webhook:
-      url: "cert-manager-webhook"
+      url: 
+        host: "cert-manager-webhook"
