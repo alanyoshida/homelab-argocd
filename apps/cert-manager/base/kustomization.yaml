@@ -9,3 +9,4 @@ helmCharts:
   repo: https://charts.jetstack.io
   valuesInline:
     installCRDs: true
+    namespace: "cert-manager"
