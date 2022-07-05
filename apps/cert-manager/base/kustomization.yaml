@@ -9,5 +9,3 @@ helmCharts:
   repo: https://charts.jetstack.io
   valuesInline:
     installCRDs: true
-    webhook:
-      url: "cert-manager-webhook"
