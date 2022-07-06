@@ -1,0 +1,31 @@
+# we enable insecure mode (accept http) for argocd as we use mTLS in Istio and TLS in TLS does not make too much sense
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-server
+spec:
+  template:
+    spec:
+      containers:
+        - name: argocd-server
+          command:
+            - argocd-server
+            - --staticassets
+            - /shared/app
+            - --repo-server
+            - argocd-repo-server:8081
+            - --insecure
+---
+# here we rename port 80 to get proper http metrics and delete the unused 443 port (we only use http as TLS is handled by Istio)
+apiVersion: v1
+kind: Service
+metadata:
+  name: argocd-server
+spec:
+  ports:
+  - name: http-argocdserver
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  - port: 443
+    $patch: delete
