@@ -6,4 +6,4 @@ helmCharts:
   includeCRDs: true
   releaseName: grafana
   version: 6.32.2
-  repo: https://charts.bitnami.com/bitnami
+  repo: https://grafana.github.io/helm-charts
