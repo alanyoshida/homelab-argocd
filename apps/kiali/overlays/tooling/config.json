@@ -3,7 +3,7 @@
   "userGivenName": "kiali-operator",
   "destNamespace": "kiali-operator",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "apps/kiali-operator/overlays/tooling",
+  "srcPath": "apps/kiali/overlays/tooling",
   "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
   "srcTargetRevision": "",
   "labels": null
