@@ -1,6 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    proxy.istio.io/config: '{"discoveryAddress" : "istiod.istio-system.svc:15012" }'
   name: heimdall
   namespace: heimdall
   labels:
