@@ -2,12 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: heimdall
 resources:
+  - deployment.yaml
   - vs.yaml
-helmCharts:
-- name: heimdall
-  releaseName: heimdall
-  version: 8.3.2
-  repo: https://k8s-at-home.com/charts/
-  valuesInline:
-    env:
-      TZ: "America/Sao_Paulo"
+  - service.yaml

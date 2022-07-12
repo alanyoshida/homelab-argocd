@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: heimdall
+  namespace: heimdall
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: heimdall
+      app.kubernetes.io/name: heimdall
+  template:
+    spec:
+      automountServiceAccountToken: true
+      containers:
+      - env:
+        - name: PGID
+          value: "1000"
+        - name: PUID
+          value: "1000"
+        - name: TZ
+          value: America/Sao_Paulo
+        name: heimdall
+        image: linuxserver/heimdall:2.4.13
+        imagePullPolicy: IfNotPresent
+        livenessProbe:
+          failureThreshold: 3
+          periodSeconds: 10
+          successThreshold: 1
+          tcpSocket:
+            port: 80
+          timeoutSeconds: 1
+        ports:
+        - containerPort: 80
+          name: http
+          protocol: TCP
+        readinessProbe:
+          failureThreshold: 3
+          periodSeconds: 10
+          successThreshold: 1
+          tcpSocket:
+            port: 80
+          timeoutSeconds: 1
+        startupProbe:
+          failureThreshold: 30
+          periodSeconds: 5
+          successThreshold: 1
+          tcpSocket:
+            port: 80
+          timeoutSeconds: 1
+      dnsPolicy: ClusterFirst
+      enableServiceLinks: true
+      restartPolicy: Always
+      serviceAccount: default
+      serviceAccountName: default
+      terminationGracePeriodSeconds: 30
