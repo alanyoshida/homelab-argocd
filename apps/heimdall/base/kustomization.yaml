@@ -6,7 +6,7 @@ resources:
 helmCharts:
 - name: heimdall
   releaseName: heimdall
-  version: 8.3.1
+  version: 8.3.2
   repo: https://k8s-at-home.com/charts/
   valuesInline:
     env:
