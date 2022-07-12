@@ -4,15 +4,17 @@ metadata:
   name: heimdall
   namespace: heimdall
   labels:
-    app.kubernetes.io/name: heimdall
+    app: heimdall
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/instance: heimdall
-      app.kubernetes.io/name: heimdall
+      app: heimdall
   template:
+    metadata:
+      labels:
+        app: heimdall
     spec:
       automountServiceAccountToken: true
       containers:
