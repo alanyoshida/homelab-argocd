@@ -1,0 +1,10 @@
+{
+  "appName": "heimdall",
+  "userGivenName": "heimdall",
+  "destNamespace": "heimdall",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/heimdall/overlays/tooling",
+  "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
+  "srcTargetRevision": "",
+  "labels": null
+}
