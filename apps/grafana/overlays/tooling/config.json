@@ -1,0 +1,10 @@
+{
+  "appName": "grafana",
+  "userGivenName": "grafana",
+  "destNamespace": "observability",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/grafana/overlays/tooling",
+  "srcRepoURL": "https://github.com/alanyoshida/homelab-argocd.git",
+  "srcTargetRevision": "",
+  "labels": null
+}
