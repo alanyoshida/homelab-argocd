@@ -12,3 +12,7 @@ helmCharts:
   releaseName: istiod
   version: 1.14.1
   repo: https://istio-release.storage.googleapis.com/charts
+  valuesInline:
+    meshConfig:
+      defaultConfig:
+        discoveryAddress: istiod.istio-system.svc:15012
