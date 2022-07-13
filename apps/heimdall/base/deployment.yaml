@@ -30,6 +30,10 @@ spec:
         name: heimdall
         image: linuxserver/heimdall:2.4.13
         imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+          name: http
+          protocol: TCP
         livenessProbe:
           failureThreshold: 3
           periodSeconds: 10
@@ -37,10 +41,6 @@ spec:
           tcpSocket:
             port: 80
           timeoutSeconds: 1
-        ports:
-        - containerPort: 80
-          name: http
-          protocol: TCP
         readinessProbe:
           failureThreshold: 3
           periodSeconds: 10

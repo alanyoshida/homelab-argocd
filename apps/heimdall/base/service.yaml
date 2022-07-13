@@ -10,5 +10,4 @@ spec:
     port: 80
     targetPort: http
   selector:
-    app.kubernetes.io/instance: heimdall
-    app.kubernetes.io/name: heimdall
+    app: heimdall
